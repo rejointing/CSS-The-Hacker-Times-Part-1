@@ -1,47 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
-
 body {
-    font-family: Source Sans Pro;
     background-color: #eee;
-
+    font-family: 'Source Sans Pro';
 }
-
-header {
-    font-family: Abril Fatface;
-    border-radius: 0;
+header > h1 {
+    font-family: 'Abril Fatface';
+    text-align: center;
+}
+.newspaper-container {
+    background-color: white;
     display: inline-block;
-    position: relative;
-    padding: 1em;
-    margin: 1em;
-
+    margin: 10%;
+    border-radius: 1%;
+    padding: 1em 1em;
+    box-shadow: 1px 1px 2px #ddd;
 }
 
-ul {
+li {
+    list-style: none;
     display: inline-block;
+    margin-left: 0.5em;
 }
-
-h1 { 
-    font-family: Abril Fatface;
-    display: inline-block;
-    position: relative;
-    top: 10px;
-    left: 5px;
-    padding: 1em;
-    border: 2px transparent;
-    margin: 1em;
-    font-size: 50px;
-    background-color: whitesmoke;
+nav {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
-
-#newspaper-container {
-    width: 700px;
-    border-radius: 30px;
-    box-shadow: black;
-    padding: 20em;
-    background-color: whitesmoke;
-
+a:link {
+    text-decoration: none;
+    color: #777;
 }
-
-#navbar {
-    display: inline-block;
+img {
+    box-shadow: 1px 1px 2px #ddd;
+}
+main {
+    font-family: 'Roboto Slab';
+}
+main > h5 {
+    color: #dd3232;
+}
+main > img, p {
+    display: inline;
+    width: 100%;
+    text-align: justify;
+}
+.more-articles {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+    margin-top: 1em;
+}
+section {
+    display: block;
+    padding: 0 1em;
+}
+section > h4 {
+    font-family: 'Roboto Slab';
+}
+.even-more-articles {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #eee;
+}
+footer > div {
+    font-size: small;
+    text-align: center;
 }
